@@ -1,15 +1,15 @@
 :root {
-  --color-primary: goldenrod;
-  --color-primary-light: gold;
-  --color-secondary: lightcoral;
-  --color-accent: greenyellow;
-  --color-neutral-beife: #e2e2e2;
-  --color-whatever: peachpuff;
+  --color-primary: #2a92a1;
+  --color-primary-light: #8bd1db;
+  --color-secondary: #fa5159;
+  --color-accent: #fdc5c8;
+  --color-neutral-beife: #fff;
+  --color-whatever: #ac161d;
 
-  --font-primary: "Alegeya Sans","Trebuchet MS", Arial, sans-serif;
-  --font-secondary: "Source Code Pro", Menlo, Consolas, monospace;
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Lato", sans-serif;
 }
 
 html {
-  font-family: var(--font-primary)
+  font-family: var(--font-primary);
 }
