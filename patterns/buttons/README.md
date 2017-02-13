@@ -1,7 +1,7 @@
-The buttons use our primary colour to draw attention and stand out. Each button has a specific purpose:
+The buttons use primary and secondary colours along with primary light and accent colour for the hover.
 
-- The regular buttons are for cards, forms and where the background is a light colour.
-- The light buttons are for dark background areas.
-- The ghost buttons should be used exclusively on banners where the background is a image.
+I wanted to use both colours to give myself options on any page say I change the background color I can change the button easily.
 
-Feel free to mix them with 'font-size' classes to make different sizes of buttons.
+- The standard button (in both colours) is meant to be a transition button or submit button.
+- The light button (in both colours) is meant to complement or become a secondary option after the standard button.
+- The ghosts button is for images or for an accent on a solid colour page.

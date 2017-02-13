@@ -5,6 +5,17 @@
   color: #fff;
 }
 
+.btn:hover {
+  background-image: url(../../images/icon-1.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: transparent;
+  background-color: var(--color-primary-light);
+  border-color: var(--color-primary-light);
+
+}
+
 .btn-light {
   background-color: var(--color-primary-light);
   border-color: var(--color-primary-light);
@@ -12,9 +23,58 @@
   color: #fff;
 }
 
+.btn-light:hover {
+  background-image: url(../../images/icon-2.svg);
+  border-color: var(--color-primary);
+  background-color: var(--color-primary);
+}
+
 .btn-ghost {
   background-color: transparent;
   border-color: var(--color-primary);
 
   color: var(--color-primary);
+}
+
+.btn-ghost:hover {
+  background-image: url(../../images/icon-3.svg);
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-image: url(../../images/icon-4.svg);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
+}
+
+.btn-secondary-light {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+
+  color: #fff;
+}
+
+.btn-secondary-light:hover {
+  background-image: url(../../images/icon-5.svg);
+  border-color: var(--color-secondary);
+  background-color: var(--color-secondary);
+}
+
+.btn-secondary-ghost {
+  background-color: transparent;
+  border-color: var(--color-secondary);
+
+  color: var(--color-secondary);
+}
+
+.btn-secondary-ghost:hover {
+  background-image: url(../../images/icon-6.svg);
+  border-color: var(--color-accent);
+  background-color: var(--color-accent);
 }
