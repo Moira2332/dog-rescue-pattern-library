@@ -13,3 +13,32 @@
 html {
   font-family: var(--font-primary);
 }
+
+a {
+  color: var(--color-primary)
+}
+
+ul, ol, li {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+dt {
+  font-weight: bold;
+}
+
+mark {
+  background-color: var(--color-secondary);
+}
+
+blockquote {
+  font-weight: bold;
+}
+
+cite {
+  font-weight: lighter;
+}
+
+q {
+  font-weight: bolder;
+}
