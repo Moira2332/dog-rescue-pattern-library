@@ -15,7 +15,7 @@ html {
 }
 
 a {
-  color: var(--color-primary)
+  color: var(--color-primary);
 }
 
 ul, ol, li {
