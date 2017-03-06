@@ -23,6 +23,7 @@
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#icons">Icons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
           </ul>
         </nav>
       </div>
@@ -454,7 +455,7 @@
         <nav class="pattern-nav milli">
           <ol class="list-group-inline pad-t-1-4 push-0">
               <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-basic-card">Basic card</a></li>
-              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-icon-card">Icon card</a></li>
+              <li><a class="btn btn-ghost btn-rounded gutter push-1-4 pad-t-1-8 pad-b-1-8" href="#cards-button-card">Button card</a></li>
           </ol>
         </nav>
     </div>
@@ -472,6 +473,10 @@
           <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
             <h3 class="pattern-name tera push-1-8">Basic card</h3>
           </div>
+            <div class="pattern-desc milli island">
+              <div class="max-length"><p>The basic card should only be for the dog page. It is a preview of the dog that lead to more info.</p>
+</div>
+            </div>
         </div>
 
       <div class="pattern-examples">
@@ -480,35 +485,173 @@
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="card island-1-2"&gt;
-  &lt;h2 class="push-1-4">This is a card&lt;/h2>
-  &lt;p class="push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p>
+              <code><pre>&lt;div class="card island-1"&gt;
+  &lt;img class="img-flex pad-b-1-4" src="../../images/spot.jpeg" alt="">
+  &lt;div class="grid">
+    &lt;h2 class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Spot&lt;/h2>
+    &lt;p class="unit xs-1 s-1 m-1-2 l-1-2">3345&lt;/p>
+    &lt;p class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Chocolate Lab.&lt;/p>
+    &lt;div class="unit xs-1 s-1 m-1-2 l-1-2">
+      &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
+    &lt;/div>
+  &lt;/div>
 &lt;/div>
 </pre></code>
             </div>
           </div>
       </div>
     </div>
-    <div class="pattern-details push" id="cards-icon-card">
+    <div class="pattern-details push" id="cards-button-card">
         <div class="push">
           <div class="pattern-toolbar pattern-toolbar-inner gutter pad-t-1-4 pad-b-1-4">
-            <h3 class="pattern-name tera push-1-8">Icon card</h3>
+            <h3 class="pattern-name tera push-1-8">Button card</h3>
           </div>
+            <div class="pattern-desc milli island">
+              <div class="max-length"><p>The icon card is generally used for calls-to-action on the homepage or highlights on inside pages.</p>
+</div>
+            </div>
         </div>
 
       <div class="pattern-examples">
         <div class="gutter">
-          <iframe class="push" src="patterns/cards/icon-card.html" onload="resizeIframe(this)"></iframe>
+          <iframe class="push" src="patterns/cards/button-card.html" onload="resizeIframe(this)"></iframe>
         </div>
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="card island-1-2 text-center"&gt;
-  &lt;i class="icon i-128 push-1-2">
-      &lt;svg>&lt;use xlink:href="../../images/icons.svg#velociraptor"/>&lt;/svg>
-    &lt;/i>
+              <code><pre>&lt;div class="card-2 pad-b-1-4 pad-t-1-2 text-center"&gt;
   &lt;h2 class="push-1-4">This is a card&lt;/h2>
-  &lt;p class="push-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p>
+  &lt;p class="push-0 pad-b">Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p>
+  &lt;div class="pad-b-1-2">
+    &lt;a class="btn btn-secondary gutter " href="#">View Details&lt;/a>
+  &lt;/div>
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="forms">
+  <div class="push">
+    <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-4">
+      <h2 class="pattern-name peta push-1-8">Forms</h2>
+    </div>
+
+      <div class="pattern-desc milli island">
+        <div class="max-length"><p>This small form provides the options that one would need within this application.Basic info is applied to the different types of boxes and when info is not filled a correlating error message is shown.</p>
+</div>
+      </div>
+  </div>
+
+  
+
+    <div class="pattern-details push" id="forms-index">
+
+      <div class="pattern-examples">
+        <div class="gutter">
+          <iframe class="push" src="patterns/forms/index.html" onload="resizeIframe(this)"></iframe>
+        </div>
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form class="max-length island" action="index.html" method="post" novalidate=""&gt;
+
+  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+    &lt;h3 class="push-0">
+        &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-lable">There are items that require your attention&lt;/span>
+      &lt;/h3>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="dog-name">Dog Name&lt;/label>
+    &lt;input id="dog-name" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a name&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="name">Your Name &lt;em class="extra milli normal">(First &amp; Last)&lt;/em>&lt;/label>
+    &lt;input id="name" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a name&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="email">Email&lt;/label>
+    &lt;input type="email" id="email" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+    &lt;/p>
+  &lt;/div>
+  &lt;section class="grid">
+    &lt;div class="push-1-2 unit xs-1 s-1 m-1 l-1 xl-1">
+      &lt;label for="province">Province&lt;/label>
+      &lt;select id="province" required aria-describedby="province-error">
+        &lt;option>Ontario&lt;/option>
+        &lt;option>Qu&#xE9;bec&lt;/option>
+        &lt;option>Alberta&lt;/option>
+        &lt;option>British Columbia&lt;/option>
+        &lt;option>Nova Scotia&lt;/option>
+        &lt;option>Newfoundland and Labrador&lt;/option>
+        &lt;option>Manitoba&lt;/option>
+        &lt;option>New Brunswick&lt;/option>
+        &lt;option>Prince Edward Island&lt;/option>
+        &lt;option>Saskatchewan&lt;/option>
+      &lt;/select>
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a Province&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      &lt;label for="name">City&lt;/label>
+      &lt;input id="name" required aria-describedby="city-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a city&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2 max-width unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      &lt;label for="name">Postal/Zip Code&lt;/label>
+      &lt;input id="name" required aria-describedby="postal-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a postal or zip code&lt;/span>
+      &lt;/p>
+    &lt;/div>
+  &lt;/section>
+
+  &lt;div class="push-1-2">
+    &lt;label for="text">Note to Loyal Rescue&lt;em class="flag-optional milli normal">(optional)&lt;/em>&lt;/label>
+    &lt;textarea type="text" id="text">
+    &lt;/textarea>&lt;/div>
+
+  &lt;div class="push-1-2 pad-t-1-2">
+    &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+    &lt;label for="agree">Agree &lt;em class="extra milli normal">&lt;a href="#">(To Terms and Conditions)&lt;/a>&lt;/em>&lt;/label>
+    &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please To Terms and Conditions to Continue&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="pad-t-1-2">
+    &lt;button class="btn" type="submit">Send&lt;/button>
+  &lt;/div>
+
+  &lt;div class="pad-t-1-2">
+    &lt;button class="btn" type="submit">Save&lt;/button>
+  &lt;/div>
+&lt;/form>
 </pre></code>
             </div>
           </div>

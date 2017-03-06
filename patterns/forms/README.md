@@ -1,0 +1,1 @@
+This small form provides the options that one would need within this application.Basic info is applied to the different types of boxes and when info is not filled a correlating error message is shown.
