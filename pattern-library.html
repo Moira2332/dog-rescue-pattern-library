@@ -677,6 +677,7 @@
         <ol class="list-group-inline push-1-4">
             <li><a href="#cards-basic-card">Basic card</a></li>
             <li><a href="#cards-button-card">Button card</a></li>
+            <li><a href="#cards-grid-cards">Grid cards</a></li>
         </ol>
       </nav>
   </div>
@@ -785,6 +786,93 @@
     &lt;a class="btn btn-secondary gutter " href="#">View Details&lt;/a>
   &lt;/div>
 &lt;/div>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="pattern-details" id="cards-grid-cards">
+        <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
+          <h3 class="pattern-name tera push-1-8">Grid cards</h3>
+            <div class="gutter absolute pin-cr">
+              <a class="pattern-pop" href="patterns/cards/grid cards.html" target="_blank" title="Open pattern in a new tab">
+                <i class="icon i-18">
+                  <svg><use xlink:href="#pop-out" /></svg>
+                </i>
+              </a>
+            </div>
+        </div>
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/cards/grid cards.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="grid"&gt;
+  &lt;div class="card island-1 unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
+    &lt;img class="img-flex pad-b-1-4" src="../../images/spot.jpeg" alt="">
+    &lt;div class="grid">
+      &lt;h2 class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Spot&lt;/h2>
+      &lt;p class="unit xs-1 s-1 m-1-2 l-1-2">3345&lt;/p>
+      &lt;p class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Chocolate Lab.&lt;/p>
+      &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 micro pad-b">
+        &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="card island-1 unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
+    &lt;img class="img-flex pad-b-1-4" src="../../images/spot.jpeg" alt="">
+    &lt;div class="grid">
+      &lt;h2 class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Spot&lt;/h2>
+      &lt;p class="unit xs-1 s-1 m-1-2 l-1-2">3345&lt;/p>
+      &lt;p class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Chocolate Lab.&lt;/p>
+      &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 micro pad-b">
+        &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="card island-1 unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
+    &lt;img class="img-flex pad-b-1-4" src="../../images/spot.jpeg" alt="">
+    &lt;div class="grid">
+      &lt;h2 class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Spot&lt;/h2>
+      &lt;p class="unit xs-1 s-1 m-1-2 l-1-2">3345&lt;/p>
+      &lt;p class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Chocolate Lab.&lt;/p>
+      &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 micro pad-b">
+        &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+
+  &lt;div class="card island-1 unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
+    &lt;img class="img-flex pad-b-1-4" src="../../images/spot.jpeg" alt="">
+    &lt;div class="grid">
+      &lt;h2 class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Spot&lt;/h2>
+      &lt;p class="unit xs-1 s-1 m-1-2 l-1-2">3345&lt;/p>
+      &lt;p class="push-1-4 unit xs-1 s-1 m-1-2 l-1-2">Chocolate Lab.&lt;/p>
+      &lt;div class="unit xs-1 s-1 m-1-2 l-1-2 micro pad-b">
+        &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
+      &lt;/div>
+    &lt;/div>
+  &lt;/div>
+&lt;/section>
 </pre></code>
             </div>
           </div>
@@ -980,21 +1068,13 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;nav class="max-width nav-1"&gt;
+              <code><pre>&lt;nav class="max-width nav-wrap"&gt;
   &lt;input type="checkbox" class="nav-check" id="nav-check">
   &lt;label class="nav-label" for="nav-check">
-    &lt;i class="icon i-48 nav-close">&lt;svg>&lt;use xlink:href="../../images/icons.svg#open"/>&lt;/svg>&lt;/i>
-    &lt;i class="icon i-48 nav-open">&lt;svg>&lt;use xlink:href="../../images/icons.svg#close"/>&lt;/svg>&lt;/i>
+    &lt;i class="icon i-48 nav-open">&lt;svg>&lt;use xlink:href="../../images/icons.svg#open"/>&lt;/svg>&lt;/i>
+    &lt;i class="icon i-48 nav-close">&lt;svg>&lt;use xlink:href="../../images/icons.svg#close"/>&lt;/svg>&lt;/i>
   &lt;/label>
-  &lt;ul class="nav">
-    &lt;li class="mega pad-b-1-2">&lt;a href="#">Home&lt;/a>&lt;/li>
-    &lt;li class="mega pad-b-1-2">&lt;a href="#">Application&lt;/a>&lt;/li>
-    &lt;li class="mega">&lt;a href="#">FAQ&lt;/a>&lt;/li>
-  &lt;/ul>
-&lt;/nav>
-
-&lt;nav class="nav-2">
-  &lt;ul class="nav-long grid text-center">
+  &lt;ul class="nav grid text-center list-group">
     &lt;li class="mega island unit m-1-3 l-1-3 xl-1-3">&lt;a href="#">Home&lt;/a>&lt;/li>
     &lt;li class="mega island unit m-1-3 l-1-3 xl-1-3">&lt;a href="#">Application&lt;/a>&lt;/li>
     &lt;li class="mega island unit m-1-3 l-1-3 xl-1-3">&lt;a href="#">FAQ&lt;/a>&lt;/li>

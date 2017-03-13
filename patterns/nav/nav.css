@@ -16,6 +16,10 @@
   list-style-type: none;
 }
 
+.nav li:hover {
+  background-color: var(--color-whatever);
+}
+
 .nav-check:checked ~ .nav {
   display: block;
 }
@@ -47,33 +51,13 @@
   display: none;
 }
 
-.max-width {
-  width: 30%;
-}
-
-.nav-2 {
-  display: none;
-}
-
-.nav-1 {
-  display: block;
-}
-
 @media only screen and (min-width: 42em) {
 
-  .nav-1 {
+  .nav {
+    display: block;
+  }
+
+  .nav-wrap .nav-label {
     display: none;
   }
-
-  .nav-2 {
-    display: block;
-    background-color: var(--color-secondary);
-  }
-
-  .nav-long a{
-    color: #fff;
-    text-decoration: none;
-    list-style-type: none;
-  }
-
 }
