@@ -18,6 +18,8 @@
 
 .nav li:hover {
   background-color: var(--color-whatever);
+  border: var(--color-whatever);
+  border-radius: 4rem;
 }
 
 .nav-check:checked ~ .nav {
@@ -29,8 +31,7 @@
   top: -3em;
 }
 
-.nav-label
-{
+.nav-label {
   cursor: pointer;
 }
 
