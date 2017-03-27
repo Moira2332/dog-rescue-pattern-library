@@ -52,6 +52,7 @@
               <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#icons">Icons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#buttons">Buttons</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#cards">Cards</a></li>
+                <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#carousel">Carousel</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#footer">Footer</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#forms">Forms</a></li>
                 <li><a class="gutter pad-t-1-4 pad-b-1-4 block" href="#header">Header</a></li>
@@ -797,7 +798,7 @@
         <div class="pattern-toolbar pattern-toolbar-inner relative gutter pad-t-1-4 pad-b-1-4">
           <h3 class="pattern-name tera push-1-8">Grid cards</h3>
             <div class="gutter absolute pin-cr">
-              <a class="pattern-pop" href="patterns/cards/grid cards.html" target="_blank" title="Open pattern in a new tab">
+              <a class="pattern-pop" href="patterns/cards/grid-cards.html" target="_blank" title="Open pattern in a new tab">
                 <i class="icon i-18">
                   <svg><use xlink:href="#pop-out" /></svg>
                 </i>
@@ -808,7 +809,7 @@
       <div class="pattern-examples pad-t-1-2 pad-b">
         <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
           <div class="resizeable-pattern relative" style="">
-            <iframe src="patterns/cards/grid cards.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+            <iframe src="patterns/cards/grid-cards.html" scrolling="no" onload="resizeIframe(this)"></iframe>
               <div class="resizeable-pattern-length">
                 <div class="resize-handle resize-handle-left" style="">
                   <i class="icon i-18">
@@ -873,6 +874,109 @@
         &lt;a class="btn btn-secondary" href="#">View Details&lt;/a>
       &lt;/div>
     &lt;/div>
+  &lt;/div>
+&lt;/section>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
+
+</section>
+
+        <section class="pattern" id="carousel">
+  <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
+    <h2 class="pattern-name peta push-1-4">Carousel</h2>
+        <div class="gutter absolute pin-cr">
+          <a class="pattern-pop" href="patterns/carousel/carousel.html" target="_blank" title="Open pattern in a new tab">
+            <i class="icon i-18">
+              <svg><use xlink:href="#pop-out" /></svg>
+            </i>
+          </a>
+        </div>
+  </div>
+
+
+  
+
+    <div class="pattern-details" id="carousel-carousel">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/carousel/carousel.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;section class="max-length"&gt;
+  &lt;div class="carousel relative">
+    &lt;input class="carousel-input" type="radio" name="mammals" id="arsinoitherium-control" checked>
+    &lt;input class="carousel-input" type="radio" name="mammals" id="elasmotherium-control">
+    &lt;input class="carousel-input" type="radio" name="mammals" id="glyptodon-control">
+    &lt;input class="carousel-input" type="radio" name="mammals" id="megatherium-control">
+
+    &lt;div class="carousel-inner relative">
+      &lt;div class="carousel-items">
+        &lt;div class="carousel-item embed embed-golden" id="arsinoitherium">
+          &lt;div class=" boxed absolute zindex-3">
+            &lt;a href="#">Click to see more abot Bailey&lt;/a>
+          &lt;/div>
+          &lt;img class="embed-item" src="images/arsinoitherium.jpg" alt="">
+        &lt;/div>
+
+        &lt;div class="carousel-item embed embed-golden" id="elasmotherium">
+          &lt;div class=" boxed absolute zindex-3">
+            &lt;a href="#">Click to see more abot Bella&lt;/a>
+          &lt;/div>
+          &lt;img class="embed-item" src="images/elasmotherium.jpg" alt="">
+        &lt;/div>
+
+        &lt;div class="carousel-item embed embed-golden" id="glyptodon">
+          &lt;div class=" boxed absolute zindex-3">
+            &lt;a href="#">Click to see more abot Charlie&lt;/a>
+          &lt;/div>
+          &lt;img class="embed-item" src="images/glyptodon.jpg" alt="">
+        &lt;/div>
+
+        &lt;div class="carousel-item embed embed-golden" id="megatherium">
+          &lt;div class=" boxed absolute zindex-3">
+            &lt;a href="#">Click to see more abot Buddy&lt;/a>
+          &lt;/div>
+          &lt;img class="embed-item" src="images/megatherium.jpg" alt="">
+        &lt;/div>
+
+      &lt;/div>
+      &lt;ul class="carousel-controls list-group-inline pin-bc absolute w-1 text-center push-0 island-1-2">
+        &lt;li>
+          &lt;label class="carousel-btn icon i-18 ir" for="arsinoitherium-control">Arsinoitherium&lt;/label>
+        &lt;/li>
+        &lt;li>
+          &lt;label class="carousel-btn icon i-18 ir" for="elasmotherium-control">Elasmotherium&lt;/label>
+        &lt;/li>
+        &lt;li>
+          &lt;label class="carousel-btn icon i-18 ir" for="glyptodon-control">Glyptodon&lt;/label>
+        &lt;/li>
+        &lt;li>
+          &lt;label class="carousel-btn icon i-18 ir" for="megatherium-control">Megatherium&lt;/label>
+        &lt;/li>
+      &lt;/ul>
+
+    &lt;/div>
+
   &lt;/div>
 &lt;/section>
 </pre></code>
@@ -1127,17 +1231,17 @@
 
           <div class="gutter">
             <div class="pattern-code milli island-1-2">
-              <code><pre>&lt;div class="header grid"&gt;
-  &lt;div class="text zetta unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-    &lt;p>Loyal Rescue&lt;/p>
-  &lt;/div>
-  &lt;div class="text-center gutter unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
+              <code><pre>&lt;div class="header"&gt;
+  &lt;div class="text-center gutter">
     &lt;i class="icon-1 icon i-192 block center-block push-1-2">
           &lt;img class="img-flex" src="../../images/logo-256.svg" alt="">
         &lt;/i>
-    &lt;i class="icon-2 icon i-64 push-r-1-4">
+    &lt;i class="icon-2 icon i-64 block center-block">
           &lt;img class="img-flex" src="../../images/logo-64.svg" alt="">
         &lt;/i>
+  &lt;/div>
+  &lt;div class="text text-center zetta">
+    &lt;p>Loyal Rescue&lt;/p>
   &lt;/div>
 &lt;/div>
 </pre></code>
