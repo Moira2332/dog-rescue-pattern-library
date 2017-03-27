@@ -10,7 +10,7 @@
 
 .nav a {
   display: block;
-  padding: 0.5;
+  padding: .5em;
   text-decoration: none;
   color: #fff;
   list-style-type: none;
@@ -35,7 +35,7 @@
   cursor: pointer;
 }
 
-.nav-check+.nav-label::before {
+.nav-check + .nav-label::before {
   content: none;
   display: none;
 }
@@ -44,11 +44,11 @@
   display: none;
 }
 
-.nav-check:checked ~ .nav-label  .nav-close {
+.nav-check:checked ~ .nav-label .nav-close {
   display: inline-block;
 }
 
-.nav-check:checked ~ .nav-label  .nav-open {
+.nav-check:checked ~ .nav-label .nav-open {
   display: none;
 }
 
