@@ -1048,7 +1048,7 @@
   <div class="pattern-toolbar gutter pad-t-1-4 pad-b-1-8 relative">
     <h2 class="pattern-name peta push-1-4">Forms</h2>
         <div class="gutter absolute pin-cr">
-          <a class="pattern-pop" href="" target="_blank" title="Open pattern in a new tab">
+          <a class="pattern-pop" href="patterns/forms/index.html" target="_blank" title="Open pattern in a new tab">
             <i class="icon i-18">
               <svg><use xlink:href="#pop-out" /></svg>
             </i>
@@ -1063,6 +1063,133 @@
 
   
 
+    <div class="pattern-details" id="forms-index">
+
+      <div class="pattern-examples pad-t-1-2 pad-b">
+        <div class="gutter-2 pad-t-1-2 pad-b-1-2 push-1-2" style="">
+          <div class="resizeable-pattern relative" style="">
+            <iframe src="patterns/forms/index.html" scrolling="no" onload="resizeIframe(this)"></iframe>
+              <div class="resizeable-pattern-length">
+                <div class="resize-handle resize-handle-left" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+                <div class="resize-handle resize-handle-right" style="">
+                  <i class="icon i-18">
+                    <svg><use xlink:href="#resize-handle" /></svg>
+                  </i>
+                </div>
+              </div>
+          </div>
+        </div>
+
+          <div class="gutter">
+            <div class="pattern-code milli island-1-2">
+              <code><pre>&lt;form class="max-length island" action="index.html" method="post" novalidate=""&gt;
+
+  &lt;div class="error-message error-message-highlighted push island-1-2" role="alert" aria-live="assertive">
+    &lt;h3 class="push-0">
+        &lt;i class="icon i-32">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-lable">There are items that require your attention&lt;/span>
+      &lt;/h3>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="dog-name">Dog Name&lt;/label>
+    &lt;input id="dog-name" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="dog-name-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a name&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="name">Your Name &lt;em class="extra milli normal">(First &amp; Last)&lt;/em>&lt;/label>
+    &lt;input id="name" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a name&lt;/span>
+    &lt;/p>
+  &lt;/div>
+
+  &lt;div class="push-1-2">
+    &lt;label for="email">Email&lt;/label>
+    &lt;input type="email" id="email" required aria-describedby="name-error">
+    &lt;p class="error-message milli island-1-4 push-0" id="email-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please provide a properly formatted email address&lt;/span>
+    &lt;/p>
+  &lt;/div>
+  &lt;section class="grid">
+    &lt;div class="push-1-2 unit xs-1 s-1 m-1 l-1 xl-1">
+      &lt;label for="province">Province&lt;/label>
+      &lt;select type="province" id="province" required aria-describedby="province-error">
+        &lt;option value="">Choose a Province&lt;/option>
+        &lt;option>Ontario&lt;/option>
+        &lt;option>Qu&#xE9;bec&lt;/option>
+        &lt;option>Alberta&lt;/option>
+        &lt;option>British Columbia&lt;/option>
+        &lt;option>Nova Scotia&lt;/option>
+        &lt;option>Newfoundland and Labrador&lt;/option>
+        &lt;option>Manitoba&lt;/option>
+        &lt;option>New Brunswick&lt;/option>
+        &lt;option>Prince Edward Island&lt;/option>
+        &lt;option>Saskatchewan&lt;/option>
+      &lt;/select>
+      &lt;p class="error-message milli island-1-4 push-0" id="province-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a Province&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      &lt;label for="city">City&lt;/label>
+      &lt;input id="city" required aria-describedby="city-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a city&lt;/span>
+      &lt;/p>
+    &lt;/div>
+
+    &lt;div class="push-1-2 max-width unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+      &lt;label for="postal">Postal/Zip Code&lt;/label>
+      &lt;input id="postal" required aria-describedby="postal-error">
+      &lt;p class="error-message milli island-1-4 push-0" id="name-error">
+        &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+        &lt;span class="icon-label">Please provide a postal or zip code&lt;/span>
+      &lt;/p>
+    &lt;/div>
+  &lt;/section>
+
+  &lt;div class="push-1-2">
+    &lt;label for="text">Note to Loyal Rescue&lt;em class="flag-optional milli normal">(optional)&lt;/em>&lt;/label>
+    &lt;textarea type="text" id="text">&lt;/textarea>
+  &lt;/div>
+
+  &lt;div class="push-1-2 pad-t-1-2">
+    &lt;input type="checkbox" id="agree" required aria-describedby="agree-error">
+    &lt;label for="agree">Agree &lt;em class="extra milli normal">&lt;a href="#">To Terms and Conditions&lt;/a>&lt;/em>&lt;/label>
+    &lt;p class="error-message milli island-1-4 push-0" id="agree-error">
+      &lt;i class="icon i-16">&lt;svg>&lt;use xlink:href="images/icons.svg#error"/>&lt;/svg>&lt;/i>
+      &lt;span class="icon-label">Please To Terms and Conditions to Continue&lt;/span>
+    &lt;/p>
+  &lt;/div>
+  &lt;section class="grid">
+    &lt;div class="pad-t-1-2 push-0 unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
+      &lt;button class="btn" type="submit">Send&lt;/button>
+    &lt;/div>
+
+    &lt;div class="pad-t-1-2 push-0 unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
+      &lt;button class="btn btn-light" type="submit">Save&lt;/button>
+    &lt;/div>
+  &lt;/section>
+&lt;/form>
+</pre></code>
+            </div>
+          </div>
+      </div>
+    </div>
 
 </section>
 
