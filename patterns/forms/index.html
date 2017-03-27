@@ -53,7 +53,7 @@
     <section class="grid">
       <div class="push-1-2 unit xs-1 s-1 m-1 l-1 xl-1">
         <label for="province">Province</label>
-        <select type="province" id="province" required aria-describedby="province-error">
+        <select id="province" required aria-describedby="province-error">
           <option value="">Choose a Province</option>
           <option>Ontario</option>
           <option>Québec</option>
@@ -75,16 +75,16 @@
       <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
         <label for="city">City</label>
         <input id="city" required aria-describedby="city-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <p class="error-message milli island-1-4 push-0" id="city-error">
           <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
           <span class="icon-label">Please provide a city</span>
         </p>
       </div>
 
       <div class="push-1-2 max-width unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <label for="postal">Postal/Zip Code</em></label>
+        <label for="postal">Postal/Zip Code</label>
         <input id="postal" required aria-describedby="postal-error">
-        <p class="error-message milli island-1-4 push-0" id="name-error">
+        <p class="error-message milli island-1-4 push-0" id="postal-error">
           <i class="icon i-16"><svg><use xlink:href="images/icons.svg#error" /></svg></i>
           <span class="icon-label">Please provide a postal or zip code</span>
         </p>
@@ -93,7 +93,7 @@
 
     <div class="push-1-2">
       <label for="text">Note to Loyal Rescue<em class="flag-optional milli normal">(optional)</em></label>
-      <textarea type="text" id="text"></textarea>
+      <textarea id="text"></textarea>
     </div>
 
     <div class="push-1-2 pad-t-1-2">
@@ -106,16 +106,14 @@
     </div>
     <section class="grid">
       <div class="pad-t-1-2 push-0 unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-        <button class="btn"type="submit">Send</button>
+        <button class="btn" type="submit">Send</button>
       </div>
 
       <div class="pad-t-1-2 push-0 unit xs-1-2 s-1-2 m-1-2 l-1-2 xl-1-2">
-        <button class="btn btn-light"type="submit">Save</button>
+        <button class="btn btn-light" type="submit">Save</button>
       </div>
     </section>
   </form>
-  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js">
-
-  </script>
+  <script src="https://thomasjbradley.github.io/form-validation-helper/index.js"></script>
 </body>
 </html>
