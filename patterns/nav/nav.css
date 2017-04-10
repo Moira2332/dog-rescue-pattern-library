@@ -1,6 +1,5 @@
 .nav {
   margin: 0;
-  padding: 1em;
   list-style-type: none;
   display: none;
   background-color: var(--color-secondary);
@@ -10,7 +9,6 @@
 
 .nav a {
   display: block;
-  padding: .5em;
   text-decoration: none;
   color: #fff;
   list-style-type: none;
