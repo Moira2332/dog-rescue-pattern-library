@@ -50,6 +50,10 @@
   display: none;
 }
 
+.nav-wrap {
+  background-color: var(--color-secondary);
+}
+
 @media only screen and (min-width: 42em) {
 
   .nav {
